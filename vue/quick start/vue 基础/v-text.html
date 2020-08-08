@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="uft=8">
+        <meta name="viewport" content="width=device-width,initial-scale =1.0">
+        <meta http-equiv="X-UA-Compaible" content="id=edge">
+        <title>vue-text</title>
+
+    </head>
+    <body>
+        <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+        <div id ="app">
+            <h2 v-text="message"></h2>
+            <h2>{{info}} 部分替换</h2>
+    </div>
+        <script>
+            var app =  new Vue({
+                el:"#app",
+                data:{
+                    message:"hello vue!",
+                    info:"前端移动开发"
+                }
+            })
+        </script>
+        </body>
+    </body>
+</html>
